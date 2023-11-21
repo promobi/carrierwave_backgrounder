@@ -1,3 +1,41 @@
+## 1.0.2
+
+### bugfixes
+  * [#317] Fixed an issue where #process_in_backfground would copy files but not create versions [Qqwy]
+## 1.0.1
+
+### bugfixes
+  * [#315] Fix an issue where the expectation was a string key for config [fero46]
+
+## 1.0.0
+  * No Changes
+## 1.0.0-beta.2
+
+### enhancements
+  * Now fully testing using different queue_adapters in CI
+
+### bugfixes
+  * Fix issue loading active_job
+
+## 1.0.0-beta
+
+### enhancements
+  * Add native support for ActiveJob [lardawge]
+  * Add support for multi-upload [lardawge]
+  * Add rails app for testing so we can replicate real world conditions [lardawge]
+
+### bugfixes
+  * Fix issue where a new job would be queued when a upload was removed
+
+### breaking changes
+  * Remove support for after_save in favor of after_commit
+  * Remove support for queueing systems other than ActiveJob and Sidekiq.
+
+## 0.4.3
+
+### enhancements
+  * [#307] Add support for Sidekiq 7 [holstvoogd]
+  * [#278] Add sidekiq queue config [IlkhamGaysin]
 
 ## 0.4.2
 
